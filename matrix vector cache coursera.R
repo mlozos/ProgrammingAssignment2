@@ -11,6 +11,14 @@ makeVector <- function(x = numeric()) {
        setmean = setmean,
        getmean = getmean)
 }
+## makeVector creates special vector
+
+makeCacheMatrix <-  function(x, ...) {
+  ## this function creates special matrix
+}
+cacheSolve <- function(x, ...) {
+  ## this function solves the inverse of the special matrix.
+
 x <- c(7,8,9,10)
 x
 result.mean <-mean(x)
@@ -30,7 +38,8 @@ cachemean <- function(x, ...) {
   x$setmean(m)
   m
 }
-makeCacheMatrix <- function(x = matrix()) 
+## cachemean functions calculates mean of special vector
+  makeCacheMatrix <- function(x = matrix()) 
   cacheSolve <- function(x, ...) 
 m <- matrix(7:10,nrow=2,ncol=2)
 m
